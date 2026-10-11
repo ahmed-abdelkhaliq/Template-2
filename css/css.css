@@ -1,0 +1,61 @@
+/* Start Globel Rules */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Smallar Mobile S */
+@media (min-width: 320px){
+  .container {
+    width: 315px;
+  }
+}
+/* Smallar Mobile M */
+@media (min-width: 375px){
+  .container {
+    width: 365px;
+  }
+}
+/* Smallar Mobile L */
+@media (min-width: 425px){
+  .container {
+    width: 415px;
+  }
+}
+/* Small & Tablet */
+@media (min-width: 768px){
+  .container {
+    width: 753px;
+  }
+}
+/* Medium */
+@media (min-width: 992px){
+  .container {
+    width: 969px;
+  }
+}
+/* Large */
+@media (min-width: 1200px){
+  .container {
+    width: 1170px;
+  }
+}
+/* End Globel Rules */
