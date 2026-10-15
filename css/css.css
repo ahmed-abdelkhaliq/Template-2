@@ -584,8 +584,8 @@ margin-bottom: 10px;
 }
 .about .container img {
   position: relative;
-  bottom: -120px;
-  margin-top: -120px;
+  bottom: -100px;
+  margin-top: -100px;
   max-width: 100%;
   margin-left: -45px;
 }
@@ -775,6 +775,135 @@ border-style: solid;
 border-width: 8px;
 border-color: black transparent transparent transparent;
 top: -13.5px;
-right: -8px;
+right: -6px;
 }
 /* End Skills */
+
+/* Start Quote */
+
+.quote {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url(../images/quote.jpg);
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.quote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 50%);
+}
+.quote .container {
+  position: relative;
+}
+.quote .container q {
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: block;
+}
+.quote .container q::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\e81c";
+    font-weight: 900;
+    margin-right: 10px;
+    display: inline-block;
+    transform: scaleX(-1);
+}
+.quote .container q::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\e81c";
+    font-weight: 900;
+    margin-left: 10px;
+}
+/* End Quote */
+
+/* Start Pricing */
+.pricing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.pricing .container .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+
+.pricing .container .plans .plan {
+background-color: #fcfcfc;
+text-align: center;
+}
+.pricing .container .plans .plan .head {
+  padding: 40px 20px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+.pricing .container .plans .plan .head h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.pricing .container .plans .plan span {
+  font-size: 60px;
+  font-weight: 600;
+}
+.pricing .container .plans .plan span::before {
+  content: "$";
+  font-size: 25px;
+  position: relative;
+  top: -40px;
+  margin-right: 10px;
+  font-weight: normal;
+}
+.pricing .container .plans .plan span::after {
+  content: " /MO";
+  font-size: 25px;
+  position: relative;
+  right: -10px;
+}
+.pricing .container .plans .plan ul {
+border-bottom: 1px solid var(--main-color);
+}
+.pricing .container .plans .plan ul li {
+  padding: 20px;
+  position: relative;
+}
+.pricing .container .plans .plan ul li:not(:last-child)::after {
+  content: "";
+  width: 140px;
+  height: 1px;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: 0;
+}
+.pricing .container .plans .foot a {
+  display: block;
+  padding: 10px 20px;
+  width: fit-content;
+  border: 1px solid var(--main-color);
+  margin: 30px auto;
+  text-decoration: none;
+}
+.pricing .container .text {
+  text-align: center;
+  margin: 50px auto 20px;
+  font-size: 20px;
+}
+.pricing .link {
+  display: block;
+  padding: 15px 20px;
+  width: fit-content;
+  background-color: var(--main-color);
+  text-decoration: none;
+  color: white;
+  margin: 0 auto;
+}
+/* End Pricing */
